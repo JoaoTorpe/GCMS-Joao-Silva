@@ -28,7 +28,15 @@ class WebAppApplicationTests {
 		this.mockMvc.perform(get("/joao"))
 				.andDo(print()).andExpect(status().isOk())
 				.andExpect(content()
-						.string(containsString("Hello, Joao!")));
+						.string(containsString("Hello, from Joao!")));
+	}
+
+	@Test
+	public void shouldReturnDefaultMain() throws Exception {
+		this.mockMvc.perform(get("/main"))
+				.andDo(print()).andExpect(status().isOk())
+				.andExpect(content()
+						.string(containsString("Hello, from main!")));
 	}
 
 

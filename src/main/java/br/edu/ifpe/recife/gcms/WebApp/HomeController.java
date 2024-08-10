@@ -17,6 +17,10 @@ public class HomeController {
         return "Hello, from Joao!";
     }
 
+    @RequestMapping("/main")
 
+    public @ResponseBody String main() {
+        return "Hello, from main!";
+    }
 
 }
