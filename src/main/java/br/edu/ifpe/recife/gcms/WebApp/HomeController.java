@@ -12,15 +12,22 @@ public class HomeController {
     }
 
     @RequestMapping("/joao")
-
     public @ResponseBody String greetingJoao() {
         return "Hello, from Joao!";
     }
 
     @RequestMapping("/main")
 
+
     public @ResponseBody String main() {
         return "Hello, from main!";
     }
+
+    @RequestMapping("/hotfix")
+    public @ResponseBody String hotfix() {
+        return "Hello, from hotfix!";
+    }
+
+
 
 }
