@@ -25,7 +25,7 @@ public class HomeController {
 
     @RequestMapping("/hotfix")
     public @ResponseBody String hotfix() {
-        return "Hello, from hotfix!";
+        return "Hello, from hotfix";
     }
 
 
